@@ -1,12 +1,11 @@
 import org.semanticweb.owlapi.apibinding.OWLManager;
-import org.semanticweb.owlapi.change.OWLOntologyChangeData;
-import org.semanticweb.owlapi.change.OWLOntologyChangeRecord;
 import org.semanticweb.owlapi.change.SetOntologyIDData;
 import org.semanticweb.owlapi.io.StringDocumentSource;
 import org.semanticweb.owlapi.io.StringDocumentTarget;
 import org.semanticweb.owlapi.model.*;
 
 import java.io.File;
+
 
 public class OntologyTools {
 
@@ -40,11 +39,17 @@ public class OntologyTools {
 
     }
 
-    public  OWLOntology includeVersion(OWLOntology ontology, String version) throws OWLOntologyStorageException, OWLOntologyCreationException {
+    public OWLOntology loadOntology(File ontologyFile) throws OWLOntologyCreationException {
+        OWLOntologyManager manager = create();
+        return manager.loadOntologyFromOntologyDocument(ontologyFile);
+
+    }
+
+    public  OWLOntology includeVersion(OWLOntology ontology, String version) {
         OWLOntologyID owlID = new OWLOntologyID(ontology.getOntologyID().getOntologyIRI(),IRI.create(version).asIRI());
-        OWLOntologyManager MAN =  ontology.getOWLOntologyManager();
+        OWLOntologyManager manager =  ontology.getOWLOntologyManager();
         OWLOntologyChange change = new SetOntologyIDData(owlID).createOntologyChange(ontology);
-        MAN.applyChange(change);
+        manager.applyChange(change);
         return ontology;
     }
 }

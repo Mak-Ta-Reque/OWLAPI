@@ -1,0 +1,345 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:obo="http://purl.obolibrary.org/obo/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1904320">
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1904318"/>
+        </rdfs:subClassOf>
+        <oboInOwl:created_by>sl</oboInOwl:created_by>
+        <obo:IAO_0000115>Any process that activates or increases the frequency, rate or extent of smooth muscle contraction involved in micturition.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>upregulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>positive regulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>positive regulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:someValuesFrom>
+                    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060083"/>
+                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasRelatedSynonym>up-regulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0045987"/>
+        <oboInOwl:hasRelatedSynonym>activation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>activation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasNarrowSynonym>activation of smooth muscle contraction involved in micturition</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym>upregulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>positive regulation of smooth muscle contraction involved in micturition</rdfs:label>
+        <oboInOwl:creation_date>2015-06-10T18:46:23Z</oboInOwl:creation_date>
+        <oboInOwl:id>GO:1904320</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym>up regulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>up-regulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>up regulation of smooth muscle contraction involved in micturition</oboInOwl:hasExactSynonym>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:someValuesFrom>
+                            <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060083"/>
+                        </owl:someValuesFrom>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                    </owl:Restriction>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <oboInOwl:hasExactSynonym>upregulation of smooth muscle contraction involved in micturition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up-regulation of smooth muscle contraction involved in micturition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>up regulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001139">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</owl:deprecated>
+        <oboInOwl:id>PATO:0001139</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <rdfs:label>obsolete urine glucose composition</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0035811">
+        <oboInOwl:id>GO:0035811</oboInOwl:id>
+        <oboInOwl:created_by>rfoulger</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-04-20T01:21:01Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0035809"/>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>reduction of urinary volume</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym>antidiuresis</oboInOwl:hasBroadSynonym>
+        <obo:IAO_0000115>Any process that decreases the amount of urine excreted from the body over a unit of time.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>decrease in urine flow</oboInOwl:hasExactSynonym>
+        <rdfs:label>negative regulation of urine volume</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000797">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</owl:deprecated>
+        <oboInOwl:id>PATO:0000797</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <rdfs:label>obsolete urination value</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0035810">
+        <oboInOwl:created_by>rfoulger</oboInOwl:created_by>
+        <obo:IAO_0000115>Any process that increases the amount of urine excreted from the body over a unit of time.</obo:IAO_0000115>
+        <rdfs:label>positive regulation of urine volume</rdfs:label>
+        <oboInOwl:hasBroadSynonym>diuresis</oboInOwl:hasBroadSynonym>
+        <rdfs:subClassOf>
+            <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0035809"/>
+        </rdfs:subClassOf>
+        <oboInOwl:creation_date>2011-04-20T01:19:38Z</oboInOwl:creation_date>
+        <oboInOwl:id>GO:0035810</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>increase in urine flow</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>elevation of urinary volume</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000221">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</owl:deprecated>
+        <oboInOwl:id>PATO:0000221</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <rdfs:label>obsolete urination</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0035809">
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050878"/>
+        <oboInOwl:creation_date>2011-04-20T01:17:38Z</oboInOwl:creation_date>
+        <obo:IAO_0000115>Any process that modulates the amount of urine excreted from the body over a unit of time.</obo:IAO_0000115>
+        <oboInOwl:id>GO:0035809</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>regulation of urinary volume</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>regulation of urine flow</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by>rfoulger</oboInOwl:created_by>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003014"/>
+        <rdfs:label>regulation of urine volume</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0035818">
+        <oboInOwl:created_by>rfoulger</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>diuresis resulting from pressure natriuresis</oboInOwl:hasRelatedSynonym>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003095"/>
+        <obo:IAO_0000115>An increase in the amount of urine excreted over a unit of time, as a result of pressure natriuresis.</obo:IAO_0000115>
+        <oboInOwl:creation_date>2011-04-20T01:55:42Z</oboInOwl:creation_date>
+        <rdfs:label>positive regulation of urine volume by pressure natriuresis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0035810"/>
+        <oboInOwl:id>GO:0035818</oboInOwl:id>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0035816">
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0035816</oboInOwl:id>
+        <obo:IAO_0000115>Any process where water is taken up from the collecting ducts and proximal and distal loops of the nephron, which acts to decrease the amount of urine that is excreted from the body per unit time.</obo:IAO_0000115>
+        <oboInOwl:created_by>rfoulger</oboInOwl:created_by>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0035811"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                    </owl:Restriction>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0070295"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0070295"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0035811"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:creation_date>2011-04-20T01:37:34Z</oboInOwl:creation_date>
+        <rdfs:label>renal water absorption involved in negative regulation of urine volume</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001173">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</owl:deprecated>
+        <oboInOwl:id>PATO:0001173</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <rdfs:label>obsolete urine glucose composition value</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007588"/>
+        <oboInOwl:hasDbXref>Wikipedia:Urination</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>urination</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The regulation of body fluids process in which parasympathetic nerves stimulate the bladder wall muscle to contract and expel urine from the body.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003014"/>
+        <oboInOwl:id>GO:0060073</oboInOwl:id>
+        <oboInOwl:hasExactSynonym>urine voiding</oboInOwl:hasExactSynonym>
+        <rdfs:label>micturition</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060084">
+        <obo:IAO_0000115>The process of communication from a neuron to a smooth muscle in the bladder that contributes to the expulsion of urine from the body.</obo:IAO_0000115>
+        <oboInOwl:id>GO:0060084</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym>synaptic transmission involved in urination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0060073"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007274"/>
+        <rdfs:label>synaptic transmission involved in micturition</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0060073"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                    </owl:Restriction>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0007268"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001174">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</owl:deprecated>
+        <oboInOwl:id>PATO:0001174</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <rdfs:label>obsolete urine composition</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060085">
+        <obo:IAO_0000115>A process in which the extent of smooth muscle contraction is reduced in the bladder outlet that contributes to the expulsion of urine from the body.</obo:IAO_0000115>
+        <oboInOwl:id>GO:0060085</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>synaptic transmission involved in urination</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0060073"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0045986"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044557"/>
+        <rdfs:label>smooth muscle relaxation of the bladder outlet</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1904318">
+        <oboInOwl:id>GO:1904318</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of smooth muscle contraction involved in micturition.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>regulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:someValuesFrom>
+                            <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060083"/>
+                        </owl:someValuesFrom>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                    </owl:Restriction>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <oboInOwl:creation_date>2015-06-10T18:46:11Z</oboInOwl:creation_date>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0098801"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006940"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:someValuesFrom>
+                    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060083"/>
+                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>regulation of smooth muscle contraction involved in micturition</rdfs:label>
+        <oboInOwl:created_by>sl</oboInOwl:created_by>
+        <oboInOwl:hasRelatedSynonym>regulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044062"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001175">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</owl:deprecated>
+        <oboInOwl:id>PATO:0001175</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <rdfs:label>obsolete urine composition</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1904319">
+        <oboInOwl:hasRelatedSynonym>inhibition of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>negative regulation of smooth muscle contraction involved in micturition</rdfs:label>
+        <oboInOwl:hasRelatedSynonym>downregulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of smooth muscle contraction involved in micturition</oboInOwl:hasExactSynonym>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:someValuesFrom>
+                            <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060083"/>
+                        </owl:someValuesFrom>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                    </owl:Restriction>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <oboInOwl:hasRelatedSynonym>negative regulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>down regulation of smooth muscle contraction involved in micturition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>negative regulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>down-regulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>down regulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>down-regulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>inhibition of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1904318"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:someValuesFrom>
+                    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060083"/>
+                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0045986"/>
+        <obo:IAO_0000115>Any process that stops, prevents or reduces the frequency, rate or extent of smooth muscle contraction involved in micturition.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>down regulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:1904319</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym>downregulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:creation_date>2015-06-10T18:46:17Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>downregulation of smooth muscle contraction involved in micturition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>inhibition of smooth muscle contraction involved in micturition</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:created_by>sl</oboInOwl:created_by>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060083">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0060073"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                    </owl:Restriction>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0006939"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0060073"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasRelatedSynonym>smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0060083</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym>urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000115>The process leading to shortening and/or development of tension in the urinary bladder smooth muscle tissue involved in the expulsion urine from the body.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <rdfs:label>smooth muscle contraction involved in micturition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0014832"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001165">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</owl:deprecated>
+        <oboInOwl:id>PATO:0001165</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <rdfs:label>obsolete urine enzyme composition value</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001166">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</owl:deprecated>
+        <oboInOwl:id>PATO:0001166</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <rdfs:label>obsolete urine enzyme composition</rdfs:label>
+    </owl:Class>
+</rdf:RDF>

@@ -1,3 +1,4 @@
+import com.google.common.base.Optional;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 import org.junit.Test;
@@ -5,8 +6,8 @@ import org.semanticweb.owlapi.io.StringDocumentSource;
 import org.semanticweb.owlapi.io.StringDocumentTarget;
 import org.semanticweb.owlapi.model.*;
 
+
 import java.io.File;
-import java.io.OutputStream;
 
 import static org.junit.Assert.*;
 
@@ -20,7 +21,7 @@ public class OntologyToolsTest {
         OntologyTools ontotoTools = new OntologyTools();
         String iri = "www.mak.com/exampleOntology.owl";
         OWLOntology ontology = ontotoTools.createOntology(iri);
-        assertEquals(ontology.getOWLOntologyManager().getOntologyDocumentIRI(ontology).getIRIString(),iri);
+        assertEquals(ontology.getOWLOntologyManager().getOntologyDocumentIRI(ontology).toString(),iri);
     }
 
     @org.junit.Test
@@ -51,15 +52,25 @@ public class OntologyToolsTest {
     }
 
     @Test
-    public void loadOntology() {
+    public void loadOntology() throws OWLOntologyCreationException {
+        OntologyTools tools = new OntologyTools();
+        File ontologyFile = new File("Destination.owl");
+        OWLOntology ontology = tools.loadOntology(ontologyFile);
+        assertEquals(ontology.getOntologyID().getOntologyIRI().get(),IRI.create("http://owl.mynewontology.example"));
+
     }
 
     @Test
     public void includeVersion() throws OWLOntologyCreationException, OWLOntologyStorageException {
         OntologyTools ontotoTools = new OntologyTools();
+        String version = "1.1";
+        Optional<String> gender = Optional.of("MALE");
+        System.out.println(gender);
+
         String iri = "www.mak.com/exampleOntology.owl";
         OWLOntology ontology = ontotoTools.createOntology(iri);
-        System.out.println(ontotoTools.includeVersion(ontology, "1.1"));
+        ontology = ontotoTools.includeVersion(ontology, "1.1");
+        assertNotNull(ontology.getOntologyID().getVersionIRI());
 
     }
 }
