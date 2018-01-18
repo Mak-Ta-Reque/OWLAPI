@@ -11,20 +11,15 @@ public class SubClassExtension {
     }
 
     public void addSubclass(OWLClass superClass, OWLClass subClass){
-        OWLOntology mainOntlogy = initiator.mainOntology;
-
-        OWLOntology extraOntlogy = initiator.extraOntology;
 
 
-        OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-
-        OWLDataFactory factory = manager.getOWLDataFactory();
-
-        OWLAxiom axiom = factory.getOWLSubClassOfAxiom(subClass,superClass);
-        AddAxiom addAxiom = new AddAxiom(mainOntlogy, axiom);
-        Set<OWLAnnotationAssertionAxiom> properties = extraOntlogy.getAnnotationAssertionAxioms(subClass.getIRI());
-        for (OWLAnnotationAssertionAxiom property : properties){
-            manager.applyChange(new AddAxiom(mainOntlogy,property));
+        OWLOntologyManager manager = initiator.getMainOntology().getOWLOntologyManager();
+        OWLDataFactory newdataFactory = manager.getOWLDataFactory();
+        OWLAxiom axiom = newdataFactory.getOWLSubClassOfAxiom(subClass, superClass);
+        AddAxiom addAxiom = new AddAxiom(initiator.getMainOntology(), axiom);
+        Set<OWLAnnotationAssertionAxiom> properties =initiator.extraOntology.getAnnotationAssertionAxioms(subClass.getIRI());
+        for (OWLAnnotationAssertionAxiom property : properties) {
+            manager.applyChange(new AddAxiom(initiator.mainOntology, property));
         }
         manager.applyChange(addAxiom);
 

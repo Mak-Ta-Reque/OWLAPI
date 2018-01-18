@@ -3,10 +3,59 @@
      xml:base="http://owl.mynewontology.example"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://owl.mynewontology.example"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
     
 
 
@@ -27,10 +76,18 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_0098801 -->
+    <!-- http://purl.obolibrary.org/obo/GO_1904318 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0098801">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1904318">
         <rdfs:subClassOf rdf:resource="http://owl.mynewontology.example#person"/>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of smooth muscle contraction involved in micturition.</obo:IAO_0000115>
+        <oboInOwl:created_by>sl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2015-06-10T18:46:11Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>regulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>regulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:1904318</oboInOwl:id>
+        <rdfs:label>regulation of smooth muscle contraction involved in micturition</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

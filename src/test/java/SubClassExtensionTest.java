@@ -17,11 +17,11 @@ public class SubClassExtensionTest {
         OWLDataFactory dataFactory_super = mainontology.getOWLOntologyManager().getOWLDataFactory();
         OWLClass superclass = dataFactory_super.getOWLClass(IRI.create("http://owl.mynewontology.example#person"));
         OWLDataFactory dataFactory_extra = extraOntology.getOWLOntologyManager().getOWLDataFactory();
-        OWLClass subClassReference = dataFactory_extra.getOWLClass(IRI.create("http://purl.obolibrary.org/obo/GO_0098801"));
+        OWLClass subClassReference = dataFactory_extra.getOWLClass(IRI.create("http://purl.obolibrary.org/obo/GO_1904318"));
         initiator.setMainOntology(mainontology);
         initiator.setExtraOntology(extraOntology);
-        initiator.setSuperClass(superclass);
-        initiator.setSubClassReference(subClassReference);
+        //initiator.setSuperClass(superclass);
+        //initiator.setSubClassReference(subClassReference);
         SubClassExtension extension = new SubClassExtension(initiator);
         extension.addSubclass(superclass,subClassReference);
         initiator.mainOntology.saveOntology(new FileOutputStream("result.owl"));
