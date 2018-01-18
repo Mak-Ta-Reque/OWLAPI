@@ -41,6 +41,18 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -76,19 +88,67 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_1904318 -->
+    <!-- http://purl.obolibrary.org/obo/GO_1904319 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1904318">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1904319">
         <rdfs:subClassOf rdf:resource="http://owl.mynewontology.example#person"/>
-        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of smooth muscle contraction involved in micturition.</obo:IAO_0000115>
+        <obo:IAO_0000115>Any process that stops, prevents or reduces the frequency, rate or extent of smooth muscle contraction involved in micturition.</obo:IAO_0000115>
         <oboInOwl:created_by>sl</oboInOwl:created_by>
-        <oboInOwl:creation_date>2015-06-10T18:46:11Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date>2015-06-10T18:46:17Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>down regulation of smooth muscle contraction involved in micturition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of smooth muscle contraction involved in micturition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>downregulation of smooth muscle contraction involved in micturition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>inhibition of smooth muscle contraction involved in micturition</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>regulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>regulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>GO:1904318</oboInOwl:id>
-        <rdfs:label>regulation of smooth muscle contraction involved in micturition</rdfs:label>
+        <oboInOwl:hasRelatedSynonym>down regulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>down regulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>down-regulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>down-regulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>downregulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>downregulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>inhibition of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>inhibition of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>negative regulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>negative regulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:1904319</oboInOwl:id>
+        <rdfs:label>negative regulation of smooth muscle contraction involved in micturition</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1904320 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1904320">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+        <obo:IAO_0000115>Any process that activates or increases the frequency, rate or extent of smooth muscle contraction involved in micturition.</obo:IAO_0000115>
+        <oboInOwl:created_by>sl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2015-06-10T18:46:23Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>up regulation of smooth muscle contraction involved in micturition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up-regulation of smooth muscle contraction involved in micturition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>upregulation of smooth muscle contraction involved in micturition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>activation of smooth muscle contraction involved in micturition</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>activation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>activation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>positive regulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>positive regulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>up regulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>up regulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>up-regulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>up-regulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>upregulation of smooth muscle contraction involved in urination</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>upregulation of urinary bladder smooth muscle contraction involved in micturition</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:1904320</oboInOwl:id>
+        <rdfs:label>positive regulation of smooth muscle contraction involved in micturition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Nothing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1904319"/>
+    </rdf:Description>
 </rdf:RDF>
 
 

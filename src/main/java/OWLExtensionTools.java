@@ -1,23 +1,21 @@
-import org.semanticweb.owlapi.apibinding.OWLManager;
+
 import org.semanticweb.owlapi.model.OWLClass;
-import org.semanticweb.owlapi.model.OWLDataFactory;
-import org.semanticweb.owlapi.model.OWLOntologyManager;
-
-
 import java.util.Set;
-import java.util.logging.Logger;
+
 
 public class OWLExtensionTools {
     OntologyInitiator initiator;
+    OWLClass subClassReference;
+    OWLClass superClass ;
 
-    public OWLExtensionTools(OntologyInitiator initiator){
+    public OWLExtensionTools(OntologyInitiator initiator) {
         this.initiator = initiator;
+        subClassReference = initiator.getSubClassReference();
+        superClass = initiator.getSuperClass();
     }
-    OWLClass subClassReference = initiator.subClassReference;
-    OWLClass superClass = initiator.superClass;
     public void extend(){
-        OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-        OWLDataFactory factory = initiator.extraOntology.getOWLOntologyManager().getOWLDataFactory();
+        //OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+        //OWLDataFactory factory = initiator.extraOntology.getOWLOntologyManager().getOWLDataFactory();
         Set<OWLClass> subClasses = new OWLClassTools(initiator.extraOntology, subClassReference).subClass();
         SubClassExtension subClassExtension = new SubClassExtension(initiator);
         for (OWLClass _class : subClasses){
