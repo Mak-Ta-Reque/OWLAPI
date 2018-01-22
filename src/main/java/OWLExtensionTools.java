@@ -19,7 +19,7 @@ public class OWLExtensionTools {
         Set<OWLClass> subClasses = new OWLClassTools(initiator.extraOntology, subClassReference).subClass();
         SubClassExtension subClassExtension = new SubClassExtension(initiator);
         for (OWLClass _class : subClasses){
-            if (! _class.isOWLThing() || !_class.isOWLNothing() ){
+            if (! _class.isOWLThing() && !_class.isOWLNothing() ){
                 switch (ExtensionProparty.extensionDepth){
                     case 0 :
                         subClassExtension.addSubclass(superClass, _class);

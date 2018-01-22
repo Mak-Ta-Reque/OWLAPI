@@ -63,14 +63,15 @@ public class OntologyToolsTest {
     @Test
     public void includeVersion() throws OWLOntologyCreationException, OWLOntologyStorageException {
         OntologyTools ontotoTools = new OntologyTools();
-        String version = "1.1";
+        String version = "3.1";
         Optional<String> gender = Optional.of("MALE");
         System.out.println(gender);
-
         String iri = "www.mak.com/exampleOntology.owl";
         OWLOntology ontology = ontotoTools.createOntology(iri);
-        ontology = ontotoTools.includeVersion(ontology, "1.1");
+        ontology = ontotoTools.includeVersion(ontology, version);
+        System.out.println(ontology);
         assertNotNull(ontology.getOntologyID().getVersionIRI());
+
 
     }
 }

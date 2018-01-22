@@ -17,7 +17,7 @@ public class OWLExtensionToolsTest {
         OWLDataFactory dataFactory_super = mainontology.getOWLOntologyManager().getOWLDataFactory();
         OWLClass superclass = dataFactory_super.getOWLClass(IRI.create("http://owl.mynewontology.example#person"));
         OWLDataFactory dataFactory_extra = extraOntology.getOWLOntologyManager().getOWLDataFactory();
-        OWLClass subClassReference = dataFactory_extra.getOWLClass(IRI.create("http://purl.obolibrary.org/obo/GO_1904318"));
+        OWLClass subClassReference = dataFactory_extra.getOWLClass(IRI.create("http://purl.obolibrary.org/obo/GO_0050878"));
         initiator.setMainOntology(mainontology);
         initiator.setExtraOntology(extraOntology);
         initiator.setSuperClass(superclass);
@@ -25,7 +25,7 @@ public class OWLExtensionToolsTest {
         OWLExtensionTools extensionTools = new OWLExtensionTools(initiator);
         ExtensionProparty.extensionDepth = 2;
         extensionTools.extend();
-        initiator.mainOntology.saveOntology(new FileOutputStream("result.owl"));
+        initiator.mainOntology.saveOntology(new FileOutputStream("result2.owl"));
         System.out.println(initiator.mainOntology);
     }
 }

@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://owl.mynewontology.example#"
+     xml:base="http://owl.mynewontology.example"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="http://owl.mynewontology.example"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://owl.mynewontology.example#person -->
+
+    <owl:Class rdf:about="http://owl.mynewontology.example#person"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0035809 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0035809">
+        <rdfs:subClassOf rdf:resource="http://owl.mynewontology.example#person"/>
+        <obo:IAO_0000115>Any process that modulates the amount of urine excreted from the body over a unit of time.</obo:IAO_0000115>
+        <oboInOwl:created_by>rfoulger</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-04-20T01:17:38Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>regulation of urinary volume</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>regulation of urine flow</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0035809</oboInOwl:id>
+        <rdfs:label>regulation of urine volume</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0035810 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0035810">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0035811"/>
+        <obo:IAO_0000115>Any process that increases the amount of urine excreted from the body over a unit of time.</obo:IAO_0000115>
+        <oboInOwl:created_by>rfoulger</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-04-20T01:19:38Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym>diuresis</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>elevation of urinary volume</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>increase in urine flow</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0035810</oboInOwl:id>
+        <rdfs:label>positive regulation of urine volume</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0035811 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0035811">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0035809"/>
+        <obo:IAO_0000115>Any process that decreases the amount of urine excreted from the body over a unit of time.</obo:IAO_0000115>
+        <oboInOwl:created_by>rfoulger</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-04-20T01:21:01Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym>antidiuresis</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>decrease in urine flow</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>reduction of urinary volume</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0035811</oboInOwl:id>
+        <rdfs:label>negative regulation of urine volume</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
